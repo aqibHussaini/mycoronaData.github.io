@@ -29,45 +29,35 @@
              <div class=" col-sm-4 col-12 ">
                  <div class="card bg-warning text-white">
                     <div class="card-body ">
-                        <h1>confirmed</h1>
-                        <p id="confirmed"></p>
+                        <h1 class="font-weight-bold">confirmed</h1>
+                        <p class="font-weight-bold" id="confirmed"></p>
                  </div>  
                  </div>
           </div>
                <div class=" col-sm-4 col-12">
                 <div class="card bg-success text-white">
                     <div class="card-body">
-                        <h1 >recovered</h1>
-                        <p id="recovered"></p>
+                        <h1 class="font-weight-bold">recovered</h1>
+                        <p class="font-weight-bold" id="recovered"></p>
                  </div>  
                  </div>
           </div>
                <div class=" col-sm-4 col-12">
                 <div class="card bg-danger text-white">
                     <div class="card-body  ">
-                        <h1>deaths</h1>
-                        <p id="deaths"></p>
+                        <h1 class="font-weight-bold">deaths</h1>
+                        <p class="font-weight-bold" id="deaths"></p>
                  </div>  
                  </div>
           </div>
           </div>
       </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
    <script>
-//           var req=new XMLHttpRequest();
-//           req.open('GET','https://covid19.mathdro.id/api');
-//           req.send();
-//           req.onload=function(){
-//               data=JSON.parse(req.responseText);
-//               alert(data.confirmed.value);
-//           } 
+
             $(document).ready(function(){
-	alert('hello')
                 $.ajax({
                     url:"https://covid19.mathdro.id/api",
                   dataType: 'json',
